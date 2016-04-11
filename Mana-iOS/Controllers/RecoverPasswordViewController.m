@@ -1,40 +1,28 @@
 //
-//  LoginViewController.m
+//  RecoverPasswordViewController.m
 //  Mana-iOS
 //
 //  Created by Oleksandr Burla on 4/11/16.
 //  Copyright © 2016 DB2. All rights reserved.
 //
 
-#import "LoginViewController.h"
+#import "RecoverPasswordViewController.h"
 
-@interface LoginViewController ()
+@interface RecoverPasswordViewController ()
 
 @end
 
-@implementation LoginViewController
+@implementation RecoverPasswordViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
-    
-    [self prepareUI];
-    
 }
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
-
-- (void)prepareUI {
-
-}
-
-- (IBAction)unwindToLoginViewController:(UIStoryboardSegue *)unwindSegue{
-    
-}
-
 
 /*
 #pragma mark - Navigation
@@ -45,8 +33,5 @@
     // Pass the selected object to the new view controller.
 }
 */
-
-
-
 
 @end

@@ -189,6 +189,7 @@
 		FA9F71181CBB969E006B9545 /* Splash(320_568)_iphone5@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = FA9F70ED1CBB969D006B9545 /* Splash(320_568)_iphone5@2x.png */; };
 		FA9F71191CBB969E006B9545 /* Splash(320_568)_iphone5@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = FA9F70EE1CBB969D006B9545 /* Splash(320_568)_iphone5@3x.png */; };
 		FA9F711C1CBBA16A006B9545 /* SignUpViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FA9F711B1CBBA16A006B9545 /* SignUpViewController.m */; };
+		FA9F711F1CBBA9A6006B9545 /* RecoverPasswordViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FA9F711E1CBBA9A6006B9545 /* RecoverPasswordViewController.m */; };
 		FABD225B1CB7DCA500ADB50C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = FABD225A1CB7DCA500ADB50C /* main.m */; };
 		FABD225E1CB7DCA500ADB50C /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = FABD225D1CB7DCA500ADB50C /* AppDelegate.m */; };
 		FABD22611CB7DCA500ADB50C /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FABD22601CB7DCA500ADB50C /* ViewController.m */; };
@@ -395,6 +396,8 @@
 		FA9F70EE1CBB969D006B9545 /* Splash(320_568)_iphone5@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Splash(320_568)_iphone5@3x.png"; sourceTree = "<group>"; };
 		FA9F711A1CBBA16A006B9545 /* SignUpViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SignUpViewController.h; sourceTree = "<group>"; };
 		FA9F711B1CBBA16A006B9545 /* SignUpViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SignUpViewController.m; sourceTree = "<group>"; };
+		FA9F711D1CBBA9A6006B9545 /* RecoverPasswordViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RecoverPasswordViewController.h; sourceTree = "<group>"; };
+		FA9F711E1CBBA9A6006B9545 /* RecoverPasswordViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RecoverPasswordViewController.m; sourceTree = "<group>"; };
 		FABD22561CB7DCA500ADB50C /* Mana-iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Mana-iOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		FABD225A1CB7DCA500ADB50C /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		FABD225C1CB7DCA500ADB50C /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -616,6 +619,8 @@
 				FA9F70C11CBB9254006B9545 /* LoginViewController.m */,
 				FA9F711A1CBBA16A006B9545 /* SignUpViewController.h */,
 				FA9F711B1CBBA16A006B9545 /* SignUpViewController.m */,
+				FA9F711D1CBBA9A6006B9545 /* RecoverPasswordViewController.h */,
+				FA9F711E1CBBA9A6006B9545 /* RecoverPasswordViewController.m */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -1055,6 +1060,7 @@
 			files = (
 				FA9F70B41CBB85B6006B9545 /* NSString+Validation.m in Sources */,
 				FA9A7BF91CBB84BF0098433B /* BaseNavigationController.m in Sources */,
+				FA9F711F1CBBA9A6006B9545 /* RecoverPasswordViewController.m in Sources */,
 				FA9F70B51CBB85B6006B9545 /* UIAlertView+CustomAlert.m in Sources */,
 				FA9F70A61CBB8549006B9545 /* KeychainWrapper.m in Sources */,
 				FA9F70C21CBB9254006B9545 /* LoginViewController.m in Sources */,

@@ -1,5 +1,5 @@
 //
-//  LoginViewController.h
+//  RecoverPasswordViewController.h
 //  Mana-iOS
 //
 //  Created by Oleksandr Burla on 4/11/16.
@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface LoginViewController : UIViewController
+@interface RecoverPasswordViewController : UIViewController
 
 @end
