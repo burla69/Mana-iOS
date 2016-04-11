@@ -17,6 +17,14 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+    
+    [UITabBarItem.appearance setTitleTextAttributes:
+     @{NSForegroundColorAttributeName : [UIColor whiteColor]}
+                                           forState:UIControlStateNormal];
+    [UITabBarItem.appearance setTitleTextAttributes:
+     @{NSForegroundColorAttributeName : [UIColor colorWithRed:0.07 green:0.24 blue:0.40 alpha:1.0]}
+                                           forState:UIControlStateSelected];
+    
     return YES;
 }
 

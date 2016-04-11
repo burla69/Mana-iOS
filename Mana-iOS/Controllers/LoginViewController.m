@@ -7,6 +7,7 @@
 //
 
 #import "LoginViewController.h"
+#import "MainTabBarController.h"
 
 @interface LoginViewController ()
 
@@ -32,6 +33,45 @@
 }
 
 - (IBAction)unwindToLoginViewController:(UIStoryboardSegue *)unwindSegue{
+    
+}
+
+
+- (IBAction)logInAction:(id)sender {
+//    if (![self isValidFields]) {
+//        return;
+//    }
+//    if (![self.emailField.text isEmailValid]) {
+//        [UIAlertView alertWithMessage:@"Wrong Email"];
+//        return;
+//    }
+//    
+    __weak typeof(self)weakSelf = self;
+//    [SVProgressHUD show];
+//    [[NetworkManager sharedManager] loginUserWithEmail:self.emailField.text password:self.passwordField.text completion:^(BOOL success, id response, NSError *error) {
+//        if (success) {
+//            UserModel *user = response;
+//            [[DataManager sharedManager] setActiveUserID:[user.userId stringValue]];
+            [weakSelf pushToMainTabBarController];
+//        } else {
+//            [UIAlertView alertWitherror:error];
+//        }
+//        
+//        [SVProgressHUD dismiss];
+//    }];
+}
+
+- (void)pushToMainTabBarController {
+    MainTabBarController *mainController = [self.storyboard instantiateViewControllerWithIdentifier:@"MainTabBarController"];
+    [UIView transitionWithView:[[UIApplication sharedApplication] delegate].window
+                      duration:0.5f
+                       options:UIViewAnimationOptionTransitionFlipFromLeft
+                    animations:^{
+                        dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(0.1 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+                            [[[UIApplication sharedApplication] delegate].window setRootViewController:mainController];
+                        });
+                    }
+                    completion:nil];
     
 }
 
