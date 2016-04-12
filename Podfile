@@ -6,3 +6,4 @@ pod 'JSQMessagesViewController'
 pod 'STTweetLabel'
 pod 'KILabel', '1.0.0'
 pod 'DZNPhotoPickerController/Editor'
+pod "MWPhotoBrowser"
