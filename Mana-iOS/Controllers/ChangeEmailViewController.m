@@ -1,18 +1,18 @@
 //
-//  ChangeNameViewController.m
+//  ChangeEmailViewController.m
 //  Mana-iOS
 //
 //  Created by Oleksandr Burla on 4/12/16.
 //  Copyright © 2016 DB2. All rights reserved.
 //
 
-#import "ChangeNameViewController.h"
+#import "ChangeEmailViewController.h"
 
-@interface ChangeNameViewController ()
+@interface ChangeEmailViewController ()
 
 @end
 
-@implementation ChangeNameViewController
+@implementation ChangeEmailViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -26,9 +26,10 @@
 
 - (IBAction)saveButton:(UIBarButtonItem *)sender {
     [self.navigationController popViewControllerAnimated:YES];
-    //тут отправить имя на сервер
+    //тут отправить емайл на сервер
     
-    NSLog(@"save name");
+    NSLog(@"save email");
+
 }
 
 @end

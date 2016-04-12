@@ -1,18 +1,18 @@
 //
-//  ChangeNameViewController.m
+//  ChangeLastNameViewController.m
 //  Mana-iOS
 //
 //  Created by Oleksandr Burla on 4/12/16.
 //  Copyright © 2016 DB2. All rights reserved.
 //
 
-#import "ChangeNameViewController.h"
+#import "ChangeLastNameViewController.h"
 
-@interface ChangeNameViewController ()
+@interface ChangeLastNameViewController ()
 
 @end
 
-@implementation ChangeNameViewController
+@implementation ChangeLastNameViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -26,9 +26,11 @@
 
 - (IBAction)saveButton:(UIBarButtonItem *)sender {
     [self.navigationController popViewControllerAnimated:YES];
-    //тут отправить имя на сервер
+    //тут отправить фамилию на сервер
     
-    NSLog(@"save name");
+    NSLog(@"save last name");
+
 }
+
 
 @end

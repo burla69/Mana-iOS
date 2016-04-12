@@ -12,6 +12,9 @@
 		FA5AC1021CBCCFD400C36F72 /* download.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = FA5AC1011CBCCFD400C36F72 /* download.jpeg */; };
 		FA5AC1051CBCE55000C36F72 /* ProfileTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FA5AC1041CBCE55000C36F72 /* ProfileTableViewController.m */; };
 		FA5AC10B1CBCEF3300C36F72 /* ChangeNameViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FA5AC10A1CBCEF3300C36F72 /* ChangeNameViewController.m */; };
+		FA5AC10E1CBCF52200C36F72 /* ChangeLastNameViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FA5AC10D1CBCF52200C36F72 /* ChangeLastNameViewController.m */; };
+		FA5AC1111CBCF66200C36F72 /* ChangeEmailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FA5AC1101CBCF66200C36F72 /* ChangeEmailViewController.m */; };
+		FA5AC1141CBCF99400C36F72 /* ChangePasswordViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FA5AC1131CBCF99400C36F72 /* ChangePasswordViewController.m */; };
 		FA7EA4A62E67F59ED9BEAF16 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8464210160150C3B77B11F65 /* libPods.a */; };
 		FA9A7B731CBB7A4E0098433B /* add new button.png in Resources */ = {isa = PBXBuildFile; fileRef = FA9A7AF11CBB7A4E0098433B /* add new button.png */; };
 		FA9A7B741CBB7A4E0098433B /* add new button@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = FA9A7AF21CBB7A4E0098433B /* add new button@2x.png */; };
@@ -222,6 +225,12 @@
 		FA5AC1041CBCE55000C36F72 /* ProfileTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProfileTableViewController.m; sourceTree = "<group>"; };
 		FA5AC1091CBCEF3300C36F72 /* ChangeNameViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChangeNameViewController.h; sourceTree = "<group>"; };
 		FA5AC10A1CBCEF3300C36F72 /* ChangeNameViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChangeNameViewController.m; sourceTree = "<group>"; };
+		FA5AC10C1CBCF52200C36F72 /* ChangeLastNameViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChangeLastNameViewController.h; sourceTree = "<group>"; };
+		FA5AC10D1CBCF52200C36F72 /* ChangeLastNameViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChangeLastNameViewController.m; sourceTree = "<group>"; };
+		FA5AC10F1CBCF66200C36F72 /* ChangeEmailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChangeEmailViewController.h; sourceTree = "<group>"; };
+		FA5AC1101CBCF66200C36F72 /* ChangeEmailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChangeEmailViewController.m; sourceTree = "<group>"; };
+		FA5AC1121CBCF99400C36F72 /* ChangePasswordViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChangePasswordViewController.h; sourceTree = "<group>"; };
+		FA5AC1131CBCF99400C36F72 /* ChangePasswordViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChangePasswordViewController.m; sourceTree = "<group>"; };
 		FA9A7AF11CBB7A4E0098433B /* add new button.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "add new button.png"; sourceTree = "<group>"; };
 		FA9A7AF21CBB7A4E0098433B /* add new button@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "add new button@2x.png"; sourceTree = "<group>"; };
 		FA9A7AF31CBB7A4E0098433B /* add-class.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "add-class.png"; sourceTree = "<group>"; };
@@ -508,6 +517,12 @@
 				FA5AC0FF1CBCCF2200C36F72 /* AllUsersTableViewController.m */,
 				FA5AC1091CBCEF3300C36F72 /* ChangeNameViewController.h */,
 				FA5AC10A1CBCEF3300C36F72 /* ChangeNameViewController.m */,
+				FA5AC10C1CBCF52200C36F72 /* ChangeLastNameViewController.h */,
+				FA5AC10D1CBCF52200C36F72 /* ChangeLastNameViewController.m */,
+				FA5AC10F1CBCF66200C36F72 /* ChangeEmailViewController.h */,
+				FA5AC1101CBCF66200C36F72 /* ChangeEmailViewController.m */,
+				FA5AC1121CBCF99400C36F72 /* ChangePasswordViewController.h */,
+				FA5AC1131CBCF99400C36F72 /* ChangePasswordViewController.m */,
 			);
 			name = AllControllers;
 			sourceTree = "<group>";
@@ -1147,6 +1162,7 @@
 			files = (
 				FA9F70B41CBB85B6006B9545 /* NSString+Validation.m in Sources */,
 				FA9A7BF91CBB84BF0098433B /* BaseNavigationController.m in Sources */,
+				FA5AC10E1CBCF52200C36F72 /* ChangeLastNameViewController.m in Sources */,
 				FA9F712E1CBBD9B1006B9545 /* ClassesViewController.m in Sources */,
 				FA5AC10B1CBCEF3300C36F72 /* ChangeNameViewController.m in Sources */,
 				FA9F711F1CBBA9A6006B9545 /* RecoverPasswordViewController.m in Sources */,
@@ -1163,6 +1179,7 @@
 				FA9F70B61CBB85B6006B9545 /* UIColor+CustomColors.m in Sources */,
 				FA9F712B1CBBD0D0006B9545 /* NewsFeedTableViewController.m in Sources */,
 				FA9F71281CBBD092006B9545 /* FeedCommentTableViewCell.m in Sources */,
+				FA5AC1141CBCF99400C36F72 /* ChangePasswordViewController.m in Sources */,
 				FA9F71221CBBAFDC006B9545 /* MainTabBarController.m in Sources */,
 				FA9A7BFC1CBB84BF0098433B /* UserModel.m in Sources */,
 				FA9A7BFA1CBB84BF0098433B /* BaseViewController.m in Sources */,
@@ -1171,6 +1188,7 @@
 				FABD225E1CB7DCA500ADB50C /* AppDelegate.m in Sources */,
 				FA5AC0FD1CBCCF0800C36F72 /* AllUsersTableViewCell.m in Sources */,
 				FABD225B1CB7DCA500ADB50C /* main.m in Sources */,
+				FA5AC1111CBCF66200C36F72 /* ChangeEmailViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
