@@ -11,6 +11,10 @@
 
 @interface AllUsersTableViewController ()
 
+@property (strong, nonatomic) UISearchController *searchController;
+@property (strong, nonatomic) UIView *defaultTitleView;
+@property (weak, nonatomic) IBOutlet UINavigationItem *navigationItem;
+
 @end
 
 @implementation AllUsersTableViewController
@@ -52,48 +56,55 @@
 }
 
 
-/*
-// Override to support conditional editing of the table view.
-- (BOOL)tableView:(UITableView *)tableView canEditRowAtIndexPath:(NSIndexPath *)indexPath {
-    // Return NO if you do not want the specified item to be editable.
-    return YES;
-}
-*/
+#pragma mark - Search
 
-/*
-// Override to support editing the table view.
-- (void)tableView:(UITableView *)tableView commitEditingStyle:(UITableViewCellEditingStyle)editingStyle forRowAtIndexPath:(NSIndexPath *)indexPath {
-    if (editingStyle == UITableViewCellEditingStyleDelete) {
-        // Delete the row from the data source
-        [tableView deleteRowsAtIndexPaths:@[indexPath] withRowAnimation:UITableViewRowAnimationFade];
-    } else if (editingStyle == UITableViewCellEditingStyleInsert) {
-        // Create a new instance of the appropriate class, insert it into the array, and add a new row to the table view
-    }   
-}
-*/
 
-/*
-// Override to support rearranging the table view.
-- (void)tableView:(UITableView *)tableView moveRowAtIndexPath:(NSIndexPath *)fromIndexPath toIndexPath:(NSIndexPath *)toIndexPath {
+- (IBAction)searchTouched:(id)sender {
+    
+    //self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithImage:[UIImage imageNamed:@"delete"] style:UIBarButtonItemStylePlain target:self action:@selector(closeTouched:)];
+    
+    self.definesPresentationContext = YES;
+    self.navigationItem.titleView = self.searchController.searchBar;
+    
 }
-*/
 
-/*
-// Override to support conditional rearranging of the table view.
-- (BOOL)tableView:(UITableView *)tableView canMoveRowAtIndexPath:(NSIndexPath *)indexPath {
-    // Return NO if you do not want the item to be re-orderable.
-    return YES;
+#pragma mark - Initialization
+
+- (UISearchController *)searchController {
+    if (_searchController == nil) {
+        _searchController = [[UISearchController alloc] initWithSearchResultsController:nil];
+        _searchController.searchResultsUpdater = self;
+        _searchController.delegate = self;
+        _searchController.searchBar.delegate = self;
+        _searchController.searchBar.placeholder = @"Search something...";
+        _searchController.searchBar.tintColor = [UIColor grayColor];
+        
+        
+        _searchController.hidesNavigationBarDuringPresentation = NO;
+        _searchController.dimsBackgroundDuringPresentation = YES;
+    }
+    
+    return _searchController;
 }
-*/
 
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
+- (void)closeTouched:(id)sender {
+    self.navigationItem.titleView = self.defaultTitleView;
+    self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithImage:[UIImage imageNamed:@"search"] style:UIBarButtonItemStylePlain target:self action:@selector(searchTouched:)];
+    
+    NSLog(@"closeTouched");
 }
-*/
+
+#pragma mark - UISearchControllerDelegate
+
+- (void)updateSearchResultsForSearchController:(UISearchController *)searchController {
+    
+}
+
+
+- (void)searchBarCancelButtonClicked:(UISearchBar *)searchBar {
+    self.navigationItem.titleView = self.defaultTitleView;
+    NSLog(@"searchBarCancelButtonClicked");
+}
+
 
 @end
