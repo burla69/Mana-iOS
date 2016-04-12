@@ -8,6 +8,7 @@
 
 #import "ChatsTableViewController.h"
 #import "ChatTableViewCell.h"
+#import "MessagesViewController.h"
 
 @interface ChatsTableViewController ()
 
@@ -119,6 +120,30 @@
 
 - (IBAction)addChat:(UIBarButtonItem *)sender {
     NSLog(@"Add chats");
+}
+
+
+#pragma mark - Navigation
+
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
+    
+    if ([segue.identifier isEqualToString:@"goToMessagesSegue"]) {
+        
+        MessagesViewController *manaMessagesViewController = segue.destinationViewController;
+        
+        
+        manaMessagesViewController.senderId = @"2";
+        manaMessagesViewController.senderDisplayName = @"";
+        manaMessagesViewController.recipientID = @3;
+        manaMessagesViewController.userImage = [UIImage imageNamed:@"download.jpeg"];
+        manaMessagesViewController.username = @"Ivan";
+        manaMessagesViewController.avatarURL = @"https://pp.vk.me/c630529/v630529426/29da4/zi8hS95B8YY.jpg";
+        manaMessagesViewController.hidesBottomBarWhenPushed = YES;
+        manaMessagesViewController.senderUsername = @"Antonio Philips";
+        manaMessagesViewController.senderAvatarURL = @"https://pp.vk.me/c633720/v633720426/18581/GAvI1dZM0_A.jpg";
+
+    }
+    
 }
 
 

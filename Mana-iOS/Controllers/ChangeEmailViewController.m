@@ -7,8 +7,13 @@
 //
 
 #import "ChangeEmailViewController.h"
+#import "NSString+Validation.h"
+#import "UIAlertView+CustomAlert.h"
+
+
 
 @interface ChangeEmailViewController ()
+@property (weak, nonatomic) IBOutlet UITextField *emailTextField;
 
 @end
 
@@ -25,10 +30,35 @@
 }
 
 - (IBAction)saveButton:(UIBarButtonItem *)sender {
-    [self.navigationController popViewControllerAnimated:YES];
     //тут отправить емайл на сервер
     
-    NSLog(@"save email");
+    
+    
+    if([self.emailTextField.text isEmailValid]){
+        //        [SVProgressHUD show];
+        //        [[NetworkManager sharedManager] changeEmailToEmail:self.emailTextField.text completion:^(BOOL success, id response, NSError *error) {
+        //            if (success) {
+        //                [UIAlertView alertWithMessage:@"Email successfully changed"];
+        //                self.emailTextField.text = @"";
+        //
+        //                [self.navigationController popViewControllerAnimated:YES];
+        //            } else {
+        //                [UIAlertView alertWitherror:error];
+        //            }
+        //            
+        //            [SVProgressHUD dismiss];
+        //        }];
+        NSLog(@"save email");
+        [self.navigationController popViewControllerAnimated:YES];
+
+    } else {
+        NSLog(@"Incorrect email");
+        [UIAlertView alertWithMessage:@"Incorrect email"];
+    }
+
+    
+    
+    
 
 }
 

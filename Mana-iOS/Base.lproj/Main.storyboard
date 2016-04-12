@@ -1002,9 +1002,6 @@
                                                         <constraint firstAttribute="height" constant="20" id="FwG-zi-MHa"/>
                                                     </constraints>
                                                     <state key="normal" image="edit"/>
-                                                    <connections>
-                                                        <segue destination="Z35-ih-s5r" kind="show" id="XlX-s8-guG"/>
-                                                    </connections>
                                                 </button>
                                             </subviews>
                                             <constraints>
@@ -1017,6 +1014,9 @@
                                                 <constraint firstItem="xHI-e6-qUU" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="kQU-UR-bZR" secondAttribute="trailing" constant="23" id="t0u-hb-x48"/>
                                             </constraints>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <segue destination="Z35-ih-s5r" kind="show" id="Umv-VI-Jx5"/>
+                                        </connections>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="60" id="Ndw-m5-HPc">
                                         <rect key="frame" x="0.0" y="254" width="320" height="60"/>
@@ -1038,9 +1038,6 @@
                                                         <constraint firstAttribute="height" constant="20" id="bXC-pK-Rue"/>
                                                     </constraints>
                                                     <state key="normal" image="edit"/>
-                                                    <connections>
-                                                        <segue destination="H1x-xm-ukV" kind="show" id="Jqj-bw-p1o"/>
-                                                    </connections>
                                                 </button>
                                             </subviews>
                                             <constraints>
@@ -1053,6 +1050,9 @@
                                                 <constraint firstAttribute="bottomMargin" secondItem="2r7-7x-qfd" secondAttribute="bottom" constant="11" id="zwE-AU-r2w"/>
                                             </constraints>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <segue destination="H1x-xm-ukV" kind="show" id="e7z-R5-Mkq"/>
+                                        </connections>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="60" id="3EC-RA-tsG">
                                         <rect key="frame" x="0.0" y="314" width="320" height="60"/>
@@ -1074,9 +1074,6 @@
                                                         <constraint firstAttribute="width" constant="24" id="y0F-Jv-mu2"/>
                                                     </constraints>
                                                     <state key="normal" image="edit"/>
-                                                    <connections>
-                                                        <segue destination="Aqk-Mw-huc" kind="show" id="XhN-zh-s1G"/>
-                                                    </connections>
                                                 </button>
                                             </subviews>
                                             <constraints>
@@ -1089,6 +1086,9 @@
                                                 <constraint firstItem="a4m-ej-CNj" firstAttribute="top" secondItem="mBE-MT-9xv" secondAttribute="topMargin" constant="11" id="vDw-NW-Yek"/>
                                             </constraints>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <segue destination="Aqk-Mw-huc" kind="show" id="64q-un-SAf"/>
+                                        </connections>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="60" id="EPM-aJ-e3a">
                                         <rect key="frame" x="0.0" y="374" width="320" height="60"/>
@@ -1110,9 +1110,6 @@
                                                         <constraint firstAttribute="height" constant="22" id="ZEz-Qj-DDV"/>
                                                     </constraints>
                                                     <state key="normal" image="more-details"/>
-                                                    <connections>
-                                                        <segue destination="gzK-4P-cj6" kind="show" id="XmS-ws-pu5"/>
-                                                    </connections>
                                                 </button>
                                             </subviews>
                                             <constraints>
@@ -1125,6 +1122,9 @@
                                                 <constraint firstAttribute="bottomMargin" secondItem="E6d-pN-fTn" secondAttribute="bottom" constant="11" id="zbv-dm-RyZ"/>
                                             </constraints>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <segue destination="gzK-4P-cj6" kind="show" id="hdP-60-tnd"/>
+                                        </connections>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="60" id="rfl-Qf-fgA">
                                         <rect key="frame" x="0.0" y="434" width="320" height="60"/>
@@ -1192,7 +1192,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Enter new name..." textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="kPb-ft-ems">
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Enter new name..." textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="kPb-ft-ems">
                                 <rect key="frame" x="11" y="89" width="298" height="25"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="25" id="Irc-rq-IgV"/>
@@ -1315,6 +1315,7 @@
                                     <outlet property="mesageLabel" destination="Td6-uH-KBV" id="aId-Em-WeA"/>
                                     <outlet property="nameLabel" destination="2Av-bk-cI4" id="vEL-eh-hbg"/>
                                     <outlet property="timeLabel" destination="W4g-4R-4Q0" id="8L8-7X-1h0"/>
+                                    <segue destination="H0q-5U-6OD" kind="show" identifier="goToMessagesSegue" id="Rd4-d4-Yz9"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
@@ -1423,7 +1424,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Enter new last name..." textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ON3-Yp-wUU">
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Enter new last name..." textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="ON3-Yp-wUU">
                                 <rect key="frame" x="11" y="89" width="298" height="25"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="25" id="afH-bR-zQR"/>
@@ -1475,7 +1476,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Enter new Email..." textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="rS0-pf-cpw">
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Enter new Email..." textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="rS0-pf-cpw">
                                 <rect key="frame" x="11" y="89" width="298" height="25"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="25" id="WFT-zg-ADp"/>
@@ -1523,10 +1524,31 @@
                             </connections>
                         </barButtonItem>
                     </navigationItem>
+                    <connections>
+                        <outlet property="emailTextField" destination="rS0-pf-cpw" id="HBZ-pQ-93h"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="EfP-wp-mNs" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2863" y="988"/>
+        </scene>
+        <!--Messages View Controller-->
+        <scene sceneID="7t1-Lz-Bey">
+            <objects>
+                <viewController id="H0q-5U-6OD" customClass="MessagesViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="EVD-ZU-XYi"/>
+                        <viewControllerLayoutGuide type="bottom" id="RYY-nd-CeR"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="E9D-hG-kw0">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="S9q-u7-rop" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2461" y="1667"/>
         </scene>
         <!--Change Password-->
         <scene sceneID="UNg-2q-3yS">
@@ -1540,7 +1562,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Old password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="mWP-LX-ZSy">
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Old password" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="mWP-LX-ZSy">
                                 <rect key="frame" x="11" y="89" width="298" height="25"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="25" id="LaR-9i-Ydn"/>
@@ -1563,14 +1585,14 @@
                                     <constraint firstAttribute="height" constant="2" id="cBJ-fd-Chm"/>
                                 </constraints>
                             </view>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Confirm Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="xvQ-OY-r1h">
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Confirm Password" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="xvQ-OY-r1h">
                                 <rect key="frame" x="10" y="219" width="300" height="25"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="25" id="QRq-ub-gsa"/>
                                 </constraints>
                                 <color key="textColor" red="0.14117647059999999" green="0.16078431369999999" blue="0.1764705882" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
-                                <textInputTraits key="textInputTraits" autocapitalizationType="words"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="words" secureTextEntry="YES"/>
                             </textField>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Kwu-ap-rd4">
                                 <rect key="frame" x="0.0" y="262" width="320" height="2"/>
@@ -1579,14 +1601,14 @@
                                     <constraint firstAttribute="height" constant="2" id="T9d-4S-AJG"/>
                                 </constraints>
                             </view>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="New password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Bar-4f-ZqS">
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="New password" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="Bar-4f-ZqS">
                                 <rect key="frame" x="11" y="154" width="298" height="25"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="25" id="oVE-3h-pLg"/>
                                 </constraints>
                                 <color key="textColor" red="0.14117647059999999" green="0.16078431369999999" blue="0.1764705882" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
-                                <textInputTraits key="textInputTraits" autocapitalizationType="words"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="words" secureTextEntry="YES"/>
                             </textField>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -1622,7 +1644,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="uJd-ns-46J" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3263" y="988"/>
+            <point key="canvasLocation" x="3261" y="988"/>
         </scene>
     </scenes>
     <resources>

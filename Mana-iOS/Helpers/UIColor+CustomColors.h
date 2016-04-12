@@ -12,5 +12,7 @@
 
 + (UIColor *)blueColorMy;
 + (UIColor *)whiteColorMy;
++ (UIColor *) greyColorMy;
++ (UIColor *) skyBlueColorMy;
 
 @end
